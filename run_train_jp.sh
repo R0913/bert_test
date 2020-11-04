@@ -1,5 +1,5 @@
 BATCH_SIZE=32
-TEXT_LENGTH=256
+TEXT_LENGTH=140
 EPOCH=2
 
 MECAB_DICT_DIR=`mecab-config --dicdir`
@@ -13,9 +13,9 @@ CONF_FILE=${MODEL_DIR}/bert_config.json
 BASE_MODEL=${MODEL_DIR}/pytorch_model.bin
 VOCAB_FILE=${MODEL_DIR}/vocab.txt
 
-TRAIN_TSV=./data/masuda/train_10000.tsv
-SAVE_PATH=./results/masuda/net_trained_10000.pth
-LOG_FILE=./results/masuda/train_10000.log
+TRAIN_TSV=./data/train.tsv
+SAVE_PATH=./results/net_trained.pth
+LOG_FILE=./results/train.log
 
 
 function run_once() {
